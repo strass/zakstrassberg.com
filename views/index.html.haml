@@ -42,9 +42,8 @@
 
   -# Main content
   %section.row#main
-    %article.col-xs-12#portfolio
-      %h1.text-center Portfolio
-      %p maybe redefine this to be experience or skills and have the next section (with images carousel) be portfolio
+    %article.col-xs-12#skills
+      %h1.text-center Skills
       -# Code
       %section.col-xs-12.col-md-6#code
         %h2.text-center Code
@@ -54,6 +53,7 @@
             %ul
               %li Coding Dojo
               %li Pica Design
+              %li Zak Strassberg Design
               %li 10+ years of server administration
           %li
             %h3 Skills:
@@ -92,16 +92,29 @@
             %h3 
               Jackson Laboratories 
               %small (Jan 2010 - May 2010, May 2011 - Aug 2011)
+
+
+
+  -# work
+  %section.row#work
+    %article.col-xs-12
+      %h2 Work (check to make sure this h2 tag matches)
+    %article.col-xs-6.col-md-4.col-xl-3.block-center
+      %img.img-responsive{:src => "http://placehold.it/300x300"}
+      %p This is some text
+
+    %article.col-xs-6.col-md-4.col-xl-3.block-center
+      %img.img-responsive{:src => "http://placehold.it/300x300"}
+      %p This is some text
+
+    %article.col-xs-6.col-md-4.col-xl-3.block-center
+      %img.img-responsive{:src => "http://placehold.it/300x300"}
+      %p This is some text
+
+  
+  -# about
+  %section.row
     %article.col-xs-12.col-md-6.col-md-offset-3#about
-
-
-
-
-      -# MAYBE AN IMAGE CAROSEL OR SOMETHING HERE
-
-
-
-
       -# About section (parsed from Markdown)
       %h1.text-center About
       :markdown
@@ -111,7 +124,7 @@
 
         After graduating from McGill I spent time deciding what to do next. While volunteering for a lab at Boston University School of Medicine I discovered how fun and exciting coding is. I taught myself Python in a weekend and had a script ready for testing on Monday. Soon thereafter I was offered a position at Stanford University School of Medicine and joined the lab of Dr. Ngan Huang.
 
-        After 2 years I was ready for a change and decided to attend Coding Dojo. I wanted to learn new skills and take my entirely self-taught coding skills to the next level. Now I am looking for a job in the tech industry. I am a quick study, a hard worker, and a self-motivated individual. 
+        After 2 years at Stanford I was ready for a change and decided to attend Coding Dojo. I wanted to learn new skills and take my entirely self-taught coding skills to the next level. Now I am looking for a job in the tech industry. I am a quick study, a hard worker, and a self-motivated individual. 
 
         I'm still learning but I'll always be learning. Let me be your next employee.
 
