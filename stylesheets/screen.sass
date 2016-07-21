@@ -1,0 +1,29 @@
+@import 'variables.scss'
+// @import "font-awesome-sprockets"
+@import "fontawesome/font-awesome"
+@import "compass"
+nav
+  position: relative
+  #logo
+    padding: 20px
+  ul#bar
+    position: absolute
+    bottom: 0
+    right: 0
+    li
+      display: inline
+      a
+        @include transition-duration(.4s)
+        &:hover
+          background: lighten($btn-default-bg, 15%)
+
+header.banner
+  background-color: white
+  color: $gray
+  #links
+    padding: 20px 0
+    a
+      color: $brand-info
+      @include transition-duration(.4s)
+      &:hover
+        color: darken($brand-info, 15%)

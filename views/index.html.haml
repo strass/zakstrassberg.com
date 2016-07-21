@@ -1,0 +1,120 @@
+%div.container-fluid
+
+  -# Navbar
+  %nav.row
+    %div.col-sm-4.col-xs-12
+      %div#logo
+        %h1 ZS
+    %ul.col-sm-8.col-xs-12.text-center#bar
+      %li.col-xs-4
+        %a.btn.btn-default Work
+      %li.col-xs-4
+        %a.btn.btn-default About
+      %li.col-xs-4
+        %a.btn.btn-default Contact
+    %p I'd like to make this fixed and have the buttons light up when you're in their section. Smooth scrolling when you press the links. maybe animate it to get smaller like code jungle or whatever that website was.
+
+  -# Banner
+  %header.row.banner
+    %h1.col-xs-12 Front and backend developer, scientist, and enthusiast
+    %h2.col-xs-12 Life science background, practically trained coder
+    %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
+    %h2.col-xs-12 Ask me about my work
+    %section.col-xs-12#links
+      .col-xs-12.text-center
+        %p.sr-only Links:
+      .col-xs-3.text-center
+        %a{:href => "http://github.com/ZakStrassberg"}
+          %i.fa.fa-github-alt.fa-4x{"aria-hidden" => "true", :title => "Github"}
+          %span.sr-only Github
+      .col-xs-3.text-center
+        %a{:href => "http://linkedin.com/ZakStrassberg"}
+          %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true", :title => "LinkedIn"}
+          %span.sr-only LinkedIn
+      .col-xs-3.text-center
+        %a{:href => "http://twitter.com/ZakStrassberg"}
+          %i.fa.fa-twitter.fa-4x{"aria-hidden" => "true", :title => "Twitter"}
+          %span.sr-only Twitter
+      .col-xs-3.text-center
+        %a{:href => "mailto:zakstrassberg@gmail.com"}
+          %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true", :title => "Email"}
+          %span.sr-only Email
+
+  -# Main content
+  %section.row#main
+    %article.col-xs-12#portfolio
+      %h1.text-center Portfolio
+      %p maybe redefine this to be experience or skills and have the next section (with images carousel) be portfolio
+      -# Code
+      %section.col-xs-12.col-md-6#code
+        %h2.text-center Code
+        %ul
+          %li
+            %h3 Training:
+            %ul
+              %li Coding Dojo
+              %li Pica Design
+              %li 10+ years of server administration
+          %li
+            %h3 Skills:
+            %ul
+              %li HAML, SASS, &amp; CoffeeScript
+              %li Python
+              %li Ruby on Rails
+              %li MEAN stack
+              %li LaTeX
+              %li Linux
+              %li Vim &amp; NeoVim
+
+      -# Science
+      %section.col-xs-12.col-md-6#science
+        %h2.text-center Science
+        %ul
+          %li
+            %h3 
+              Stanford University 
+              %small (Apr 2014 - Jul 2016)
+            %p Lab manager, research assistant, and animal technician in the lab of Dr. Ngan Huang.
+            %p Focus on <em>in vivo</em> research; responsible for technical and regulatory documents, wrote scripts to automate work, heavily involved in lab management and hiring.
+            %p Still employed part-time for technical expertise. Open invitation to come back to lab.
+            %h4 Publications:
+            %ul
+              %li  Hadamitzky, Catarina, et al. "Aligned nanofibrillar collagen scaffolds–Guiding lymphangiogenesis for treatment of acquired lymphedema." Biomaterials (2016).
+              %li Cai, Lei, et al. "Protein-Engineered Hydrogels for Improved Efficacy of Stem Cell-Based Injection Therapy in a Murine Model of Peripheral Arterial Disease." Circulation 132.Suppl 3 (2015): A15060-A15060.
+            %p Is this a good place to put 2nd job with Rockson?
+          %li
+            %h3 
+              McGill University 
+              %small (Apr 2012 - Apr 2013)
+            %p Research assistant
+            %p Optimization for various protocols, including maximization of recombinant protein yield and development of autoinduction media for 
+          %li
+            %h3 
+              Jackson Laboratories 
+              %small (Jan 2010 - May 2010, May 2011 - Aug 2011)
+    %article.col-xs-12.col-md-6.col-md-offset-3#about
+
+
+
+
+      -# MAYBE AN IMAGE CAROSEL OR SOMETHING HERE
+
+
+
+
+      -# About section (parsed from Markdown)
+      %h1.text-center About
+      :markdown
+        I've always been intensely interested in the web. Growing up in rural Maine, the internet was a link to the rest of the world unlike anything I had ever encountered before. I cut my teeth in DC++ (an early peer-to-peer file sharing client) and before long I was running game servers and installing Linux in order to play with LAMP. Soon thereafter I discovered IRC and the rest is history.
+
+        I became interested in Biology after an internship at The Jackson Laboratory, a world-class research facility. I would go on to major in Biology at McGill University, although my interest in technology never waned. During this time I continued to hone my technical skills, learning LaTeX and keeping up with new developments in web design.
+
+        After graduating from McGill I spent time deciding what to do next. While volunteering for a lab at Boston University School of Medicine I discovered how fun and exciting coding is. I taught myself Python in a weekend and had a script ready for testing on Monday. Soon thereafter I was offered a position at Stanford University School of Medicine and joined the lab of Dr. Ngan Huang.
+
+        After 2 years I was ready for a change and decided to attend Coding Dojo. I wanted to learn new skills and take my entirely self-taught coding skills to the next level. Now I am looking for a job in the tech industry. I am a quick study, a hard worker, and a self-motivated individual. 
+
+        I'm still learning but I'll always be learning. Let me be your next employee.
+
+    -# Contact
+    %article.col-xs-12#contact
+      %h1.text-center Contact
