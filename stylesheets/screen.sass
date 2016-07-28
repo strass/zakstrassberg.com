@@ -2,19 +2,20 @@
 // @import "font-awesome-sprockets"
 @import "fontawesome/font-awesome"
 @import "compass"
+// @import "../sass/_typography"
 
 
 
-nav
-  position: relative
+nav.row
+  // display: flex
+  // align-items: center
   #logo
+    margin: 0
     padding: 20px
   ul#bar
-    position: absolute
-    bottom: 0
-    right: 0
+    margin: 0
     li
-      display: inline
+      display: inline-block
       a
         @include transition-duration(.4s)
         &:hover
@@ -33,6 +34,8 @@ header.banner
       @include transition-duration(.4s)
       &:hover
         color: darken($brand-info, 15%)
+  #portrait
+    max-height: 100vh
 
 section#work
   article

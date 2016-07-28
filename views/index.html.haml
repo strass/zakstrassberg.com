@@ -4,24 +4,24 @@
   -##### NAVBAR #####
   -##################
   %nav.row
-    %div.col-sm-4.col-xs-12
-      %div#logo
-        %h1 ZS
-    %ul.col-sm-8.col-xs-12.text-center#bar
-      %li.col-xs-4
-        %a.btn.btn-default Work
-      %li.col-xs-4
-        %a.btn.btn-default About
-      %li.col-xs-4
-        %a.btn.btn-default Contact
-    %p I'd like to make this fixed and have the buttons light up when you're in their section. Smooth scrolling when you press the links. maybe animate it to get smaller like code jungle or whatever that website was.
+    %h1.col-sm-5.col-xs-12#logo Zak Strassberg
+    %ul.col-sm-7.col-xs-12#bar
+      %li.col-xs-3
+        %a.btn.btn-default{:href => "#skills"} Skills
+      %li.col-xs-3
+        %a.btn.btn-default{:href => "#work"} Work
+      %li.col-xs-3
+        %a.btn.btn-default{:href => "#about"} About
+      %li.col-xs-3
+        %a.btn.btn-default{:href => "#contact"} Contact
 
   -##################
   -##### BANNER #####
   -##################
   %header.row.banner
-    .col-md-4.col-md-push-8#portrait
+    .col-md-4.col-md-push-8.col-xs-12#portrait
       %img.img-responsive{:src => "/images/zak.jpg"}
+      %div.clear
     .col-md-8.col-md-pull-4
       %h1.col-xs-12
         Hi! I'm Zak and I
@@ -37,9 +37,14 @@
         My superpowers are logic, communication, and a relentlessly positive attitude.
 
       %h2.col-xs-12 Front &amp;  backend developer, scientist, and enthusiast
-      %p.col-xs-12.col-md8
+      %p.col-xs-12.col-md-8
         My philosophy is
       %h2.col-xs-12 Life science background, practically trained coder
+      %p.col-xs-12.col-md-8
+        I'm a scientist at heart and I have a penchant for biology. I recently decided
+        to branch out and explore some new career options. I attended
+        %a{:src => "http://codingdojo.com"}
+          Coding Dojo
       %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
       %h2.col-xs-12 Ask me about my work
       %p.col-xs-12 maybe add a picture of myself here
@@ -52,7 +57,7 @@
           %li
             %blockquote
               %p " I still don't believe that Zak can stop smiling for any reason ever."
-              %footer Danielle DeCarle,
+              %footer Danielle DeCarle, PhD Student of Ecology and Evolutionary Biology at the University of Toronto and the Royal Ontario Museum
           %li
             %blockquote
               %p
@@ -60,6 +65,7 @@
                 hard­working, well­-motivated, and professionally mature. He sets and achieves
                 high standards for himself and works well with others.
               %footer Dr. Stanley Rockson, Chief of Consultative Cardiology, Stanford University School of Medicine
+
       -########################
       -##### SOCIAL LINKS #####
       -########################

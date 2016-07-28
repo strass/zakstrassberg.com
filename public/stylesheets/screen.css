@@ -2861,27 +2861,23 @@
   clip: auto;
 }
 
-nav {
-  position: relative;
-}
-nav #logo {
+nav.row #logo {
+  margin: 0;
   padding: 20px;
 }
-nav ul#bar {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+nav.row ul#bar {
+  margin: 0;
 }
-nav ul#bar li {
-  display: inline;
+nav.row ul#bar li {
+  display: inline-block;
 }
-nav ul#bar li a {
+nav.row ul#bar li a {
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-nav ul#bar li a:hover {
+nav.row ul#bar li a:hover {
   background: #6f8397;
 }
 
@@ -2905,6 +2901,9 @@ header.banner #links a {
 }
 header.banner #links a:hover {
   color: #28a1c5;
+}
+header.banner #portrait {
+  max-height: 100vh;
 }
 
 section#work article h3 {
