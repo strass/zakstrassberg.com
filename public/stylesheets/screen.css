@@ -2891,6 +2891,7 @@ header.banner {
 }
 header.banner #links {
   padding: 20px 0;
+  vertical-align: bottom;
 }
 header.banner #links a {
   color: #5bc0de;

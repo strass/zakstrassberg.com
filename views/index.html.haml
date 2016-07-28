@@ -16,42 +16,54 @@
 
   -# Banner
   %header.row.banner
-    %h1.col-xs-12
-      Hi! I'm Zak and I
-      %i.fa.fa-heart{ "aria-hidden" => "true"}
-      %span.sr-only love
-      building things!
-    %h1.col-xs-12 Front and backend developer, scientist, and enthusiast
-    %h2.col-xs-12 Life science background, practically trained coder
-    %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
-    %h2.col-xs-12 Ask me about my work
-    %p.col-xs-12 maybe add a picture of myself here
-    %section.col-xs-12#links
-      .col-xs-12.text-center
-        %p.sr-only Links:
-      .col-xs-3.text-center
-        %a{:href => "http://github.com/ZakStrassberg"}
-          %i.fa.fa-github-alt.fa-4x{"aria-hidden" => "true", :title => "Github"}
-          %span.sr-only Github
-      .col-xs-3.text-center
-        %a{:href => "http://linkedin.com/ZakStrassberg"}
-          %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true", :title => "LinkedIn"}
-          %span.sr-only LinkedIn
-      .col-xs-3.text-center
-        %a{:href => "http://twitter.com/ZakStrassberg"}
-          %i.fa.fa-twitter.fa-4x{"aria-hidden" => "true", :title => "Twitter"}
-          %span.sr-only Twitter
-      .col-xs-3.text-center
-        %a{:href => "mailto:zakstrassberg@gmail.com"}
-          %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true", :title => "Email"}
-          %span.sr-only Email
+    .col-md-4.col-md-push-8#portrait
+      %img.img-responsive{:src => "/images/zak.jpg"}
+    .col-md-8.col-md-pull-4
+      %h1.col-xs-12
+        Hi! I'm Zak and I
+        %i.fa.fa-heart.text-danger{ "aria-hidden" => "true"}
+        %span.sr-only.text-danger love
+        building things!
+      %p.col-xs-12.col-md-8
+        Born in the cold wilderness of Belfast, Maine and hardened in the artic
+        wasteland called Montreal, I have come to build responsive, accessible
+        websites!
+      %p.col-xs-12.col-md-8
+        Hire me if you want a hard-working, inquisitive mind in your organization.
+        My specialty is , , and a positive attitude.
+      %h2.col-xs-12 Front &amp;  backend developer, scientist, and enthusiast
+      %h2.col-xs-12 Life science background, practically trained coder
+      %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
+      %h2.col-xs-12 Ask me about my work
+      %p.col-xs-12 maybe add a picture of myself here
+      %section.col-xs-12#links
+        .col-xs-12.text-center
+          %p.sr-only Links:
+        .col-xs-3.text-center
+          %a{:href => "http://github.com/ZakStrassberg"}
+            %i.fa.fa-github-alt.fa-4x{"aria-hidden" => "true", :title => "Github"}
+            %span.sr-only Github
+        .col-xs-3.text-center
+          %a{:href => "http://linkedin.com/ZakStrassberg"}
+            %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true", :title => "LinkedIn"}
+            %span.sr-only LinkedIn
+        .col-xs-3.text-center
+          %a{:href => "http://twitter.com/ZakStrassberg"}
+            %i.fa.fa-twitter.fa-4x{"aria-hidden" => "true", :title => "Twitter"}
+            %span.sr-only Twitter
+        .col-xs-3.text-center
+          %a{:href => "mailto:zakstrassberg@gmail.com"}
+            %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true", :title => "Email"}
+            %span.sr-only Email
 
   -# Main content
   %section.row#main
     %article.col-xs-12#skills
       %h1.text-center Skills
 
-      -# Code
+      -################
+      -##### CODE #####
+      -################
       %section.col-xs-12.col-md-6#code
         %h2.text-center Code
         %ul
@@ -75,30 +87,33 @@
               %li Vim &amp; NeoVim
               %li Photoshop &amp; Illustrator
 
-      -# Science
+      -###################
+      -##### SCIENCE #####
+      -###################
       %section.col-xs-12.col-md-6#science
         %h2.text-center Science
         %ul
           %li
-            %h3
+            %h2
               Stanford University
               %small (Apr 2014 - Jul 2016)
-            %p Lab manager, research assistant, and animal technician in the lab of Dr. Ngan Huang.
-            %p Focus on <em>in vivo</em> research; responsible for technical and regulatory documents, wrote scripts to automate work, heavily involved in lab management and hiring.
-            %p Still employed part-time for technical expertise. Open invitation to come back to lab.
+            %p.lead Lab manager and animal surgeon
+            %p Focus on <em>in vivo</em> research in the lab of Dr. Ngan Huang; responsible for technical and regulatory documents, wrote scripts to automate work, heavily involved in lab management and hiring.
+            %p Still employed part-time for technical expertise with an open invitation to come back to lab.
+            %p.lead Research Life Science Research Assistant I
+            %p Secondary position in the lab of Dr. Stanley Rockson, Chief of Consultative Cardiology at Stanford University School of Medicine.
             %h4 Publications:
             %ul
               %li  Hadamitzky, Catarina, et al. "Aligned nanofibrillar collagen scaffolds–Guiding lymphangiogenesis for treatment of acquired lymphedema." Biomaterials (2016).
               %li Cai, Lei, et al. "Protein-Engineered Hydrogels for Improved Efficacy of Stem Cell-Based Injection Therapy in a Murine Model of Peripheral Arterial Disease." Circulation 132.Suppl 3 (2015): A15060-A15060.
-            %p Is this a good place to put 2nd job with Rockson?
           %li
-            %h3
+            %h2
               McGill University
               %small (Apr 2012 - Apr 2013)
             %p Research assistant
             %p Optimization for various protocols, including maximization of recombinant protein yield and development of autoinduction media for
           %li
-            %h3
+            %h2
               Jackson Laboratories
               %small (Jan 2010 - May 2010, May 2011 - Aug 2011)
 
@@ -108,10 +123,10 @@
   -##########################
   %section.row#work
     %article.col-xs-12
-      %h2 Work (check to make sure this h2 tag matches)
+      %h2.text-center Work
 
     -##### DOTFILES #####
-    %article.col-xs-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
       %h3
         %a{:href => "http://github.com/zakstrassberg/dotfiles"}
           dotfiles repo
@@ -123,8 +138,8 @@
         if you have any questions about my configs.
 
     -##### PORTFOLIO SRC #####
-    %article.col-xs-6.col-md-4.col-xl-3
-      %h3 
+    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+      %h3
         %a{:href=>"https://github.com/ZakStrassberg/zakstrassberg.com/"}
           Portfolio src
       %a{:href=>"https://github.com/ZakStrassberg/zakstrassberg.com/"}
@@ -139,7 +154,7 @@
     .clearfix.visible-xs-block.visible-sm-block
 
     -##### EXALTED ROLLER #####
-    %article.col-xs-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
       %h3
         %a{:href => "http://github.com/zakstrassberg/exalted-roller"}
           Node.js Dice Roller for Discord
@@ -150,20 +165,22 @@
         The dice-rolling logic is written in javascript and it uses Node.js to connect to a discord server.
       %p
         It listens for messages starting with
-        %code .roll
+        %mark .roll
         , parses the message for parameters, and outputs the roll along with formatting and the number of successes.
 
     -### clearfix for md
     .clearfix.visible-md-block
 
     -##### CENTIPEDE #####
-    %article.col-xs-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
       %h3 Centipede
       %img.img-responsive{:src => "http://placehold.it/400x400"}
       %p I got bored and built Centipede to practice my javascript and canvas skills.
 
-  -# about
-  %section.row
+  -#################
+  -##### ABOUT #####
+  -#################
+  %section.row#about
     %article.col-xs-12.col-md-8#about
       -# About section (parsed from Markdown)
       %h1.text-center About
@@ -176,7 +193,9 @@
 
         After 2 years at Stanford I was ready for a change and decided to attend Coding Dojo. I wanted to learn new skills and take my entirely self-taught coding skills to the next level. Now I am looking for a job in the tech industry. I am a quick study, a hard worker, and a self-motivated individual.
 
-    -# Contact
+    -###################
+    -##### CONTACT #####
+    -###################
     %article.col-xs-12.col-md-4#contact
       %h1.text-center Contact
       %p Zak Strassberg
