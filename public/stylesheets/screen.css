@@ -2889,6 +2889,9 @@ header.banner {
   background-color: white;
   color: #555555;
 }
+header.banner #testimonialSlider {
+  margin-top: 32px;
+}
 header.banner #links {
   padding: 20px 0;
   vertical-align: bottom;
