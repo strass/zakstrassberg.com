@@ -16,9 +16,9 @@
 
   -# Banner
   %header.row.banner
-    %h1.col-xs-12 
-      Hi! I'm Zak and I 
-      %i.fa.fa-heart{ :aria-hidden => "true"} 
+    %h1.col-xs-12
+      Hi! I'm Zak and I
+      %i.fa.fa-heart{ "aria-hidden" => "true"}
       %span.sr-only love
       building things!
     %h1.col-xs-12 Front and backend developer, scientist, and enthusiast
@@ -103,11 +103,14 @@
               %small (Jan 2010 - May 2010, May 2011 - Aug 2011)
 
 
-
-  -# work
+  -##########################
+  -########## WORK ##########
+  -##########################
   %section.row#work
     %article.col-xs-12
       %h2 Work (check to make sure this h2 tag matches)
+
+    -##### DOTFILES #####
     %article.col-xs-6.col-md-4.col-xl-3
       %h3
         %a{:href => "http://github.com/zakstrassberg/dotfiles"}
@@ -116,22 +119,38 @@
         %img.img-responsive.center-block{:src => "/images/dotfiles.png"}
       %p I maintain a github repository hosting my dotfiles. They are a work in progress (and probably will be so in perpetuity). Send me a message on github if you have any questions about my configs.
 
+    -##### PORTFOLIO SRC #####
     %article.col-xs-6.col-md-4.col-xl-3
       %h3 Portfolio src
       %img.img-responsive{:src => "http://placehold.it/400x400"}
       %p The source code for this very website can be found above. It was coded in HAML + SASS and exported using the open source Serve gem. (INSERT SERVE LINK)
 
-    -# clearfix for xs and sm
+    -### clearfix for xs and sm
     .clearfix.visible-xs-block.visible-sm-block
 
+    -##### EXALTED ROLLER #####
+    %article.col-xs-6.col-md-4.col-xl-3
+      %h3
+        %a{:href => "http://github.com/zakstrassberg/exalted-roller"}
+          Node.js Dice Roller for Discord
+      %a{:href => "http://github.com/zakstrassberg/exalted-roller"}
+        %img.img-responsive.center-block{:src => "/images/exalted-roller.png"}
+      %p
+        I built a diceroller for Discord (a chat client) for one of my favorite tabletop RPGs, Exalted.
+        The dice-rolling logic is written in javascript and it uses Node.js to connect to a discord server.
+      %p
+        It listens for messages starting with
+        %code .roll
+        , parses the message for parameters, and outputs the roll along with formatting and the number of successes.
 
+    -### clearfix for md
+    .clearfix.visible-md-block
+
+    -##### CENTIPEDE #####
     %article.col-xs-6.col-md-4.col-xl-3
       %h3 Centipede
       %img.img-responsive{:src => "http://placehold.it/400x400"}
       %p I got bored and built Centipede to practice my javascript and canvas skills.
-
-    -# clearfix for md
-    .clearfix.visible-md-block
 
   -# about
   %section.row
