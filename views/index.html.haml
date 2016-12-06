@@ -1,4 +1,4 @@
-%div.container-fluid
+%div.container
 
   -##################
   -##### NAVBAR #####
@@ -52,19 +52,19 @@
       -#########################
       -##### TESTIMONIALS ######
       -#########################
-      %section.col-xs-12#testimonials
-        %ul.col-xs-12#testimonialSlider
-          %li
-            %blockquote
-              %p " I still don't believe that Zak can stop smiling for any reason ever."
-              %footer Danielle DeCarle, PhD Student of Ecology and Evolutionary Biology at the University of Toronto and the Royal Ontario Museum
-          %li
-            %blockquote
-              %p
-                Interpersonally, Zak has shown himself to be an individual who is inquisitive,
-                hard­working, well­-motivated, and professionally mature. He sets and achieves
-                high standards for himself and works well with others.
-              %footer Dr. Stanley Rockson, Chief of Consultative Cardiology, Stanford University School of Medicine
+      -# %section.col-xs-12#testimonials
+      -#   %ul.col-xs-12#testimonialSlider
+      -#     %li
+      -#       %blockquote
+      -#         %p " I still don't believe that Zak can stop smiling for any reason ever."
+      -#         %footer Danielle DeCarle, PhD Student of Ecology and Evolutionary Biology at the University of Toronto and the Royal Ontario Museum
+      -#     %li
+      -#       %blockquote
+      -#         %p
+      -#           Interpersonally, Zak has shown himself to be an individual who is inquisitive,
+      -#           hard­working, well­-motivated, and professionally mature. He sets and achieves
+      -#           high standards for himself and works well with others.
+      -#         %footer Dr. Stanley Rockson, Chief of Consultative Cardiology, Stanford University School of Medicine
 
       -########################
       -##### SOCIAL LINKS #####
@@ -89,69 +89,32 @@
             %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true", :title => "Email"}
             %span.sr-only Email
 
-  -################
-  -##### MAIN #####
-  -################
+
+  -##################
+  -##### SKILLS #####
+  -##################
   %section.row#main
     %article.col-xs-12#skills
       %h1.text-center Skills
 
-      -################
-      -##### CODE #####
-      -################
-      %section.col-xs-12.col-md-6#code
-        %h2.text-center Code
-        %ul
-          %li
-            %h3 Training:
-            %ul
-              %li Coding Dojo
-              %li Pica Design
-              %li Zak Strassberg Design
-              %li 10+ years of server administration
-          %li
-            %h3 Skills:
-            %ul
-              %li HAML, SASS, &amp; CoffeeScript
-              %li Responsive design
-              %li Python
-              %li Ruby on Rails
-              %li MEAN stack
-              %li LaTeX
-              %li Linux
-              %li Vim &amp; NeoVim
-              %li Photoshop &amp; Illustrator
+      %dl.dl-horizontal.lead
+        %dt Languages
+        %dd JavaScript (ES2016+), Ruby, Python, HTML5 & CSS3 (including HAML, Pug/Jade, Slim, & SASS)
 
-      -###################
-      -##### SCIENCE #####
-      -###################
-      %section.col-xs-12.col-md-6#science
-        %h2.text-center Science
-        %ul
-          %li
-            %h2
-              Stanford University
-              %small (Apr 2014 - Jul 2016)
-            %p.lead Lab manager and animal surgeon
-            %p Focus on <em>in vivo</em> research in the lab of Dr. Ngan Huang; responsible for technical and regulatory documents, wrote scripts to automate work, heavily involved in lab management and hiring.
-            %p Still employed part-time for technical expertise with an open invitation to come back to lab.
-            %p.lead Research Life Science Research Assistant I
-            %p Secondary position in the lab of Dr. Stanley Rockson, Chief of Consultative Cardiology at Stanford University School of Medicine.
-            %h4 Publications:
-            %ul
-              %li  Hadamitzky, Catarina, et al. "Aligned nanofibrillar collagen scaffolds–Guiding lymphangiogenesis for treatment of acquired lymphedema." Biomaterials (2016).
-              %li Cai, Lei, et al. "Protein-Engineered Hydrogels for Improved Efficacy of Stem Cell-Based Injection Therapy in a Murine Model of Peripheral Arterial Disease." Circulation 132.Suppl 3 (2015): A15060-A15060.
-          %li
-            %h2
-              McGill University
-              %small (Apr 2012 - Apr 2013)
-            %p Research assistant
-            %p Optimization for various protocols, including maximization of recombinant protein yield and development of autoinduction media for
-          %li
-            %h2
-              Jackson Laboratories
-              %small (Jan 2010 - May 2010, May 2011 - Aug 2011)
+        %dt Server
+        %dd AWS, Heroku, private VPS (8+ years of web & game server administration)
 
+        %dt Databases
+        %dd SQL & MySQL, MongoDB, Postgres, Redis
+
+        %dt Frameworks
+        %dd Angular, Vue, React, Rails, Flask, Bootstrap, Semantic UI, Materialize
+
+        %dt Other tech
+        %dd Vim/Neovim, Linux (Debian), Photoshop, Amazon Alexa Skills, LaTeX/XeTeX, git, Webpack, Electron
+
+        %dt Miscellaneous
+        %dd SCRUM, TDD, StackOverflow
 
   -##########################
   -########## WORK ##########
@@ -159,6 +122,77 @@
   %section.row#work
     %article.col-xs-12
       %h2.text-center Work
+
+    -##### DUDE WHERE'S MY TRUCK? #####
+    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+      %h3
+        %a{:href => "http://github.com/zakstrassberg/dotfiles"}
+          Dude Where's My Truck?
+      %a{:href => "http://github.com/zakstrassberg/dotfiles"}
+        %img.img-responsive.center-block{:src => "/images/dwmt.png"}
+      %p
+        Dude Where's My Truck is a python webapp that dynamically filters and
+        displays food trucks in San Francisco. It won the August Python
+        hackathon at Coding Dojo!
+      %p
+        It uses Google Maps API, Google Geometry API, Data.gov API, Twilio,
+        FontAwesome, Moment.js, Bootstrap, and jQuery.
+      %p
+        DWMT was a Group project (2 person) completed in four days, I was
+        responsible for project management and front-end development.
+
+    .clearfix.visible-xs-block
+
+    -##### TETROMINO #####
+    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+      %h3
+        %a{:href => "http://github.com/zakstrassberg/dotfiles"}
+          Tetromino
+      %a{:href => "http://github.com/zakstrassberg/dotfiles"}
+        %img.img-responsive.center-block{:src => "/images/tetromino.png"}
+      %p
+        Battle your friends in multiplayer, competitive Tetris! Written for MEAN
+        stack project week, this was an individual project.
+      %p
+        Tetromino is built on Node, Mongo, Express, Vue, Bootstrap,
+        websockets/Socket.io, and Heroku.
+
+    .clearfix.visible-xs-block.visible-sm-block
+
+    -##### NINJA MESSAGES #####
+    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+      %h3
+        %a{:href => "http://github.com/zakstrassberg/dotfiles"}
+          Ninja Messages
+      %a{:href => "http://github.com/zakstrassberg/dotfiles"}
+        %img.img-responsive.center-block{:src => "/images/dotfiles.png"}
+      %p
+        Ninja Messages is a threaded messaging board created for Rails stack
+        project week. It features live-reloading posts and activity
+        notifications when users interact with the site. This was an individual
+        project completed in 5 days and won the October Rails hackathon.
+      %p
+        Tetromino is built on Node, Mongo, Express, Vue, Bootstrap,
+        websockets/Socket.io, and Heroku.
+
+    .clearfix.visible-xs-block.visible-lg-block.visible-md-block
+
+    -##### EXALTED ROLLER #####
+    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+      %h3
+        %a{:href => "http://github.com/zakstrassberg/exalted-roller"}
+          Node.js Dice Roller
+      %a{:href => "http://github.com/zakstrassberg/exalted-roller"}
+        %img.img-responsive.center-block{:src => "/images/exalted-roller.png"}
+      %p
+        I built a diceroller for Discord (a chat client) for one of my favorite tabletop RPGs, Exalted.
+        The dice-rolling logic is written in javascript and it uses Node.js to connect to a discord server.
+      %p
+        It listens for messages starting with
+        %mark .roll
+        , parses the message for parameters, and outputs the roll along with formatting and the number of successes.
+
+    .clearfix.visible-xs-block
 
     -##### DOTFILES #####
     %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
@@ -171,6 +205,8 @@
         I maintain a github repository hosting my dotfiles. They are a work in progress
         (and probably will be so in perpetuity). Send me a message on github
         if you have any questions about my configs.
+
+    .clearfix.visible-xs-block.visible-sm-block
 
     -##### PORTFOLIO SRC #####
     %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
@@ -185,48 +221,61 @@
         %a{:href => "http://get-serve.com/"}Serve
         gem.
 
-    -### clearfix for xs and sm
-    .clearfix.visible-xs-block.visible-sm-block
+    .clearfix.visible-xs-block.visible-sm-block.visible-lg-block.visible-md-block
 
-    -##### EXALTED ROLLER #####
-    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
-      %h3
-        %a{:href => "http://github.com/zakstrassberg/exalted-roller"}
-          Node.js Dice Roller for Discord
-      %a{:href => "http://github.com/zakstrassberg/exalted-roller"}
-        %img.img-responsive.center-block{:src => "/images/exalted-roller.png"}
-      %p
-        I built a diceroller for Discord (a chat client) for one of my favorite tabletop RPGs, Exalted.
-        The dice-rolling logic is written in javascript and it uses Node.js to connect to a discord server.
-      %p
-        It listens for messages starting with
-        %mark .roll
-        , parses the message for parameters, and outputs the roll along with formatting and the number of successes.
+    -# -##### CENTIPEDE #####
+    -# %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+    -#   %h3 Centipede
+    -#   %img.img-responsive{:src => "http://placehold.it/400x400"}
+    -#   %p I got bored and built Centipede to practice my javascript and canvas skills.
 
-    -### clearfix for md
-    .clearfix.visible-md-block
 
-    -##### CENTIPEDE #####
-    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
-      %h3 Centipede
-      %img.img-responsive{:src => "http://placehold.it/400x400"}
-      %p I got bored and built Centipede to practice my javascript and canvas skills.
 
-  -#################
-  -##### ABOUT #####
-  -#################
-  %section.row#about
-    %article.col-xs-12.col-md-8#about
-      -# About section (parsed from Markdown)
-      %h1.text-center About
-      :markdown
-        I've always been intensely interested in the web. Growing up in rural Maine, the internet was a link to the rest of the world unlike anything I had ever encountered before. I cut my teeth in DC++ (an early peer-to-peer file sharing client) and before long I was running game servers and installing Linux in order to play with LAMP. Soon thereafter I discovered IRC and the rest is history.
-
-        I became interested in Biology after an internship at The Jackson Laboratory, a world-class research facility. I would go on to major in Biology at McGill University, although my interest in technology never waned. During this time I continued to hone my technical skills, learning LaTeX and keeping up with new developments in web design.
-
-        After graduating from McGill I spent time deciding what to do next. While volunteering for a lab at Boston University School of Medicine I discovered how fun and exciting coding is. I taught myself Python in a weekend and had a script ready for testing on Monday. Soon thereafter I was offered a position at Stanford University School of Medicine and joined the lab of Dr. Ngan Huang.
-
-        After 2 years at Stanford I was ready for a change and decided to attend Coding Dojo. I wanted to learn new skills and take my entirely self-taught coding skills to the next level. Now I am looking for a job in the tech industry. I am a quick study, a hard worker, and a self-motivated individual.
+  -#     -###################
+  -#     -##### SCIENCE #####
+  -#     -###################
+  -#     %section.col-xs-12.col-md-6#science
+  -#       %h2.text-center Science
+  -#       %ul
+  -#         %li
+  -#           %h2
+  -#             Stanford University
+  -#             %small (Apr 2014 - Jul 2016)
+  -#           %p.lead Lab manager and animal surgeon
+  -#           %p Focus on <em>in vivo</em> research in the lab of Dr. Ngan Huang; responsible for technical and regulatory documents, wrote scripts to automate work, heavily involved in lab management and hiring.
+  -#           %p Still employed part-time for technical expertise with an open invitation to come back to lab.
+  -#           %p.lead Research Life Science Research Assistant I
+  -#           %p Secondary position in the lab of Dr. Stanley Rockson, Chief of Consultative Cardiology at Stanford University School of Medicine.
+  -#           %h4 Publications:
+  -#           %ul
+  -#             %li  Hadamitzky, Catarina, et al. "Aligned nanofibrillar collagen scaffolds–Guiding lymphangiogenesis for treatment of acquired lymphedema." Biomaterials (2016).
+  -#             %li Cai, Lei, et al. "Protein-Engineered Hydrogels for Improved Efficacy of Stem Cell-Based Injection Therapy in a Murine Model of Peripheral Arterial Disease." Circulation 132.Suppl 3 (2015): A15060-A15060.
+  -#         %li
+  -#           %h2
+  -#             McGill University
+  -#             %small (Apr 2012 - Apr 2013)
+  -#           %p Research assistant
+  -#           %p Optimization for various protocols, including maximization of recombinant protein yield and development of autoinduction media for
+  -#         %li
+  -#           %h2
+  -#             Jackson Laboratories
+  -#             %small (Jan 2010 - May 2010, May 2011 - Aug 2011)
+  -#
+  -# -#################
+  -# -##### ABOUT #####
+  -# -#################
+  -# %section.row#about
+  -#   %article.col-xs-12.col-md-8#about
+  -#     -# About section (parsed from Markdown)
+  -#     %h1.text-center About
+  -#     :markdown
+  -#       I've always been intensely interested in the web. Growing up in rural Maine, the internet was a link to the rest of the world unlike anything I had ever encountered before. I cut my teeth in DC++ (an early peer-to-peer file sharing client) and before long I was running game servers and installing Linux in order to play with LAMP. Soon thereafter I discovered IRC and the rest is history.
+  -#
+  -#       I became interested in Biology after an internship at The Jackson Laboratory, a world-class research facility. I would go on to major in Biology at McGill University, although my interest in technology never waned. During this time I continued to hone my technical skills, learning LaTeX and keeping up with new developments in web design.
+  -#
+  -#       After graduating from McGill I spent time deciding what to do next. While volunteering for a lab at Boston University School of Medicine I discovered how fun and exciting coding is. I taught myself Python in a weekend and had a script ready for testing on Monday. Soon thereafter I was offered a position at Stanford University School of Medicine and joined the lab of Dr. Ngan Huang.
+  -#
+  -#       After 2 years at Stanford I was ready for a change and decided to attend Coding Dojo. I wanted to learn new skills and take my entirely self-taught coding skills to the next level. Now I am looking for a job in the tech industry. I am a quick study, a hard worker, and a self-motivated individual.
 
     -###################
     -##### CONTACT #####
