@@ -1,4 +1,6 @@
-%div.container
+-# TODO: bigger font size, 2 projects per line
+
+%div.container#page
 
   -##################
   -##### NAVBAR #####
@@ -18,78 +20,80 @@
   -##################
   -##### BANNER #####
   -##################
-  %header.row.banner
-    .col-md-4.col-md-push-8.col-xs-12#portrait
-      %img.img-responsive{:src => "/images/zak.jpg"}
-      %div.clear
-    .col-md-8.col-md-pull-4
-      %h1.col-xs-12
-        Hi! I'm Zak and I
-        %i.fa.fa-heart.text-danger{ "aria-hidden" => "true"}
-        %span.sr-only.text-danger love
-        building things!
-      %p.col-xs-12.col-md-8
-        Born in the cold wilderness of Belfast, Maine and hardened in the artic
-        wasteland called Montreal, I have come to write responsive, accessible
-        websites!
-      %p.col-xs-12.col-md-8
-        Hire me if you want a hard-working, inquisitive mind in your organization.
-        My superpowers are logic, communication, and a relentlessly positive attitude.
+#banner.container-fluid
+  %div.container
+    %header.row.banner
+      .col-md-4.col-md-push-8.col-xs-12#portrait
+        %img.img-responsive{:src => "/images/zak.jpg"}
+        %div.clear
+      .col-md-8.col-md-pull-4
+        %h1.col-xs-12
+          Hi! I'm Zak and I
+          %i.fa.fa-heart.text-danger{ "aria-hidden" => "true"}
+          %span.sr-only.text-danger love
+          building things!
+        %p.col-xs-12.col-md-8
+          Born in the cold wilderness of Belfast, Maine and hardened in the artic
+          wasteland called Montreal, I have come to write responsive, accessible
+          websites!
+        %p.col-xs-12.col-md-8
+          Hire me if you want a hard-working, inquisitive mind in your organization.
+          My superpowers are logic, communication, and a relentlessly positive attitude.
 
-      %h2.col-xs-12 Front &amp;  backend developer, scientist, and enthusiast
-      %p.col-xs-12.col-md-8
-        My philosophy is
-      %h2.col-xs-12 Life science background, practically trained coder
-      %p.col-xs-12.col-md-8
-        I'm a scientist at heart and I have a penchant for biology. I recently decided
-        to branch out and explore some new career options. I attended
-        %a{:src => "http://codingdojo.com"}
-          Coding Dojo
-      %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
-      %h2.col-xs-12 Ask me about my work
-      %p.col-xs-12 maybe add a picture of myself here
+        %h2.col-xs-12 Front &amp;  backend developer, scientist, and enthusiast
+        %p.col-xs-12.col-md-8
+          My philosophy is
+        %h2.col-xs-12 Life science background, practically trained coder
+        %p.col-xs-12.col-md-8
+          I'm a scientist at heart and I have a penchant for biology. I recently decided
+          to branch out and explore some new career options. I attended
+          %a{:src => "http://codingdojo.com"}
+            Coding Dojo
+        %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
+        %h2.col-xs-12 Ask me about my work
+        %p.col-xs-12 maybe add a picture of myself here
 
-      -#########################
-      -##### TESTIMONIALS ######
-      -#########################
-      -# %section.col-xs-12#testimonials
-      -#   %ul.col-xs-12#testimonialSlider
-      -#     %li
-      -#       %blockquote
-      -#         %p " I still don't believe that Zak can stop smiling for any reason ever."
-      -#         %footer Danielle DeCarle, PhD Student of Ecology and Evolutionary Biology at the University of Toronto and the Royal Ontario Museum
-      -#     %li
-      -#       %blockquote
-      -#         %p
-      -#           Interpersonally, Zak has shown himself to be an individual who is inquisitive,
-      -#           hard­working, well­-motivated, and professionally mature. He sets and achieves
-      -#           high standards for himself and works well with others.
-      -#         %footer Dr. Stanley Rockson, Chief of Consultative Cardiology, Stanford University School of Medicine
+        -#########################
+        -##### TESTIMONIALS ######
+        -#########################
+        -# %section.col-xs-12#testimonials
+        -#   %ul.col-xs-12#testimonialSlider
+        -#     %li
+        -#       %blockquote
+        -#         %p " I still don't believe that Zak can stop smiling for any reason ever."
+        -#         %footer Danielle DeCarle, PhD Student of Ecology and Evolutionary Biology at the University of Toronto and the Royal Ontario Museum
+        -#     %li
+        -#       %blockquote
+        -#         %p
+        -#           Interpersonally, Zak has shown himself to be an individual who is inquisitive,
+        -#           hard­working, well­-motivated, and professionally mature. He sets and achieves
+        -#           high standards for himself and works well with others.
+        -#         %footer Dr. Stanley Rockson, Chief of Consultative Cardiology, Stanford University School of Medicine
 
-      -########################
-      -##### SOCIAL LINKS #####
-      -########################
-      %section.col-xs-12#links
-        .col-xs-12.text-center
-          %p.sr-only Links:
-        .col-xs-3.text-center
-          %a{:href => "http://github.com/ZakStrassberg"}
-            %i.fa.fa-github-alt.fa-4x{"aria-hidden" => "true", :title => "Github"}
-            %span.sr-only Github
-        .col-xs-3.text-center
-          %a{:href => "http://linkedin.com/ZakStrassberg"}
-            %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true", :title => "LinkedIn"}
-            %span.sr-only LinkedIn
-        .col-xs-3.text-center
-          %a{:href => "http://twitter.com/ZakStrassberg"}
-            %i.fa.fa-twitter.fa-4x{"aria-hidden" => "true", :title => "Twitter"}
-            %span.sr-only Twitter
-        .col-xs-3.text-center
-          %a{:href => "mailto:zakstrassberg@gmail.com"}
-            %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true", :title => "Email"}
-            %span.sr-only Email
+        -########################
+        -##### SOCIAL LINKS #####
+        -########################
+        %section.col-xs-12#links
+          .col-xs-12.text-center
+            %p.sr-only Links:
+          .col-xs-3.text-center
+            %a{:href => "http://github.com/ZakStrassberg"}
+              %i.fa.fa-github-alt.fa-4x{"aria-hidden" => "true", :title => "Github"}
+              %span.sr-only Github
+          .col-xs-3.text-center
+            %a{:href => "http://linkedin.com/ZakStrassberg"}
+              %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true", :title => "LinkedIn"}
+              %span.sr-only LinkedIn
+          .col-xs-3.text-center
+            %a{:href => "http://twitter.com/ZakStrassberg"}
+              %i.fa.fa-twitter.fa-4x{"aria-hidden" => "true", :title => "Twitter"}
+              %span.sr-only Twitter
+          .col-xs-3.text-center
+            %a{:href => "mailto:zakstrassberg@gmail.com"}
+              %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true", :title => "Email"}
+              %span.sr-only Email
 
-
+%div.container
   -##################
   -##### SKILLS #####
   -##################
@@ -111,7 +115,7 @@
         %dd Angular, Vue, React, Rails, Flask, Bootstrap, Semantic UI, Materialize
 
         %dt Other tech
-        %dd Vim/Neovim, Linux (Debian), Photoshop, Amazon Alexa Skills, LaTeX/XeTeX, git, Webpack, Electron
+        %dd Vim/Neovim, Linux (Debian), Photoshop, Amazon Alexa, LaTeX/XeTeX, git, Webpack, Electron
 
         %dt Miscellaneous
         %dd SCRUM, TDD, StackOverflow
@@ -124,7 +128,7 @@
       %h2.text-center Work
 
     -##### DUDE WHERE'S MY TRUCK? #####
-    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-xl-4
       %h3
         %a{:href => "http://github.com/zakstrassberg/dotfiles"}
           Dude Where's My Truck?
@@ -141,10 +145,10 @@
         DWMT was a Group project (2 person) completed in four days, I was
         responsible for project management and front-end development.
 
-    .clearfix.visible-xs-block
+    .clearfix.visible-xs-block.visible-sm-block
 
     -##### TETROMINO #####
-    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-xl-4
       %h3
         %a{:href => "http://github.com/zakstrassberg/dotfiles"}
           Tetromino
@@ -157,10 +161,9 @@
         Tetromino is built on Node, Mongo, Express, Vue, Bootstrap,
         websockets/Socket.io, and Heroku.
 
-    .clearfix.visible-xs-block.visible-sm-block
-
+    .clearfix.visible-xs-block.visible-sm-block.visible-md-block.visible-lg-block
     -##### NINJA MESSAGES #####
-    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-xl-4
       %h3
         %a{:href => "http://github.com/zakstrassberg/dotfiles"}
           Ninja Messages
@@ -175,10 +178,10 @@
         Tetromino is built on Node, Mongo, Express, Vue, Bootstrap,
         websockets/Socket.io, and Heroku.
 
-    .clearfix.visible-xs-block.visible-lg-block.visible-md-block
+    .clearfix.visible-xs-block.visible-sm-block.visible-xl-block
 
     -##### EXALTED ROLLER #####
-    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-xl-4
       %h3
         %a{:href => "http://github.com/zakstrassberg/exalted-roller"}
           Node.js Dice Roller
@@ -192,10 +195,10 @@
         %mark .roll
         , parses the message for parameters, and outputs the roll along with formatting and the number of successes.
 
-    .clearfix.visible-xs-block
+    .clearfix.visible-xs-block.visible-sm-block.visible-md-block.visible-lg-block
 
     -##### DOTFILES #####
-    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-xl-4
       %h3
         %a{:href => "http://github.com/zakstrassberg/dotfiles"}
           dotfiles repo
@@ -209,7 +212,7 @@
     .clearfix.visible-xs-block.visible-sm-block
 
     -##### PORTFOLIO SRC #####
-    %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
+    %article.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-xl-4
       %h3
         %a{:href=>"https://github.com/ZakStrassberg/zakstrassberg.com/"}
           Portfolio src
@@ -221,7 +224,7 @@
         %a{:href => "http://get-serve.com/"}Serve
         gem.
 
-    .clearfix.visible-xs-block.visible-sm-block.visible-lg-block.visible-md-block
+    .clearfix.visible-xs-block.visible-sm-block.visible-md-block.visible-lg-block.visible-xl-block
 
     -# -##### CENTIPEDE #####
     -# %article.col-xs-12.col-sm-6.col-md-4.col-xl-3
