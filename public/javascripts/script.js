@@ -18,13 +18,5 @@ $(document).ready(function() {
     //         $.each($("#work article h3 a").height(maxH3Height))
     //     });
     // }
-    $('#logo').shuffleLetters();
-
-    $('#testimonialSlider').slick({
-        autoplay: true,
-        autoplaySpeed: 20000,
-        dots: true,
-        pauseOnHover: true,
-        speed: 1500,
-    });
+    // $('#logo').shuffleLetters();
 });
