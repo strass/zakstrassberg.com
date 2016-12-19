@@ -18,5 +18,5 @@ $(document).ready(function() {
     //         $.each($("#work article h3 a").height(maxH3Height))
     //     });
     // }
-    // $('#logo').shuffleLetters();
+    $('#logo').shuffleLetters();
 });
