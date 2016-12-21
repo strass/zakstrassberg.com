@@ -82,7 +82,7 @@
               %i.fa.fa-github-alt.fa-4x{"aria-hidden" => "true", :title => "Github"}
               %span.sr-only Github
           %li.list-inline-item
-            %a{:href => "http://linkedin.com/ZakStrassberg"}
+            %a{:href => "http://linkedin.com/in/ZakStrassberg"}
               %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true", :title => "LinkedIn"}
               %span.sr-only LinkedIn
           %li.list-inline-item
@@ -102,24 +102,24 @@
     %article.col-xs-12#skills
       %h1.text-xs-center Skills
 
-      %dl.dl-horizontal.lead
-        %dt Languages
-        %dd JavaScript (ES2016+), Ruby, Python, HTML5 & CSS3 (including HAML, Pug/Jade, Slim, & SASS)
+      %dl.lead.row
+        %dt.col-sm-2 Languages
+        %dd.col-sm-10 JavaScript (ES2016+), Ruby, Python, HTML5 & CSS3 (including HAML, Pug/Jade, Slim, & SASS)
 
-        %dt Server
-        %dd AWS, Heroku, private VPS (8+ years of web & game server administration)
+        %dt.col-sm-2 Server
+        %dd.col-sm-10 AWS, Heroku, private VPS (8+ years of web & game server administration)
 
-        %dt Databases
-        %dd SQL & MySQL, MongoDB, Postgres, Redis
+        %dt.col-sm-2 Databases
+        %dd.col-sm-10 SQL & MySQL, MongoDB, Postgres, Redis
 
-        %dt Frameworks
-        %dd Angular, Vue, React, Rails, Flask, Bootstrap, Semantic UI, Materialize
+        %dt.col-sm-2 Frameworks
+        %dd.col-sm-10 Angular, Vue, React, Rails, Flask, Bootstrap, Semantic UI, Materialize
 
-        %dt Other tech
-        %dd Vim/Neovim, Linux (Debian), Photoshop, Amazon Alexa, LaTeX/XeTeX, git, Webpack, Electron
+        %dt.col-sm-2 Other tech
+        %dd.col-sm-10 Vim/Neovim, Linux (Debian), Photoshop, Amazon Alexa, LaTeX/XeTeX, git, Webpack, Electron
 
-        %dt Miscellaneous
-        %dd SCRUM, TDD, StackOverflow
+        %dt.col-sm-2 Miscellaneous
+        %dd.col-sm-10 SCRUM, TDD, StackOverflow
 
   -##########################
   -########## WORK ##########
@@ -148,12 +148,12 @@
     = render :partial => 'project',
       :locals => {:url => "http://ninja-messages.herokuapp.com",
         :name => "Ninja Messages",
-        :img => "/images/dwmt.png",
+        :img => "/images/ninja-messages.png",
         :content => "<p> Ninja Messages is a threaded messaging board created for Rails stack  project week. It features live-reloading posts and activity  notifications when users interact with the site.</p><p> This was an individual project completed in 5 days and won the October Rails hackathon.</p>"}
 
     .clearfix.visible-xs-block
     = render :partial => 'project',
-      :locals => {:url => "http://ninja-messages.herokuapp.com",
+      :locals => {:url => "https://github.com/ZakStrassberg/exalted-roller",
         :name => "Node.js Dice Roller",
         :img => "/images/exalted-roller.png",
         :content => "<p> I built a diceroller for Discord (a chat client) for one of my favorite tabletop RPGs, Exalted.  The dice-rolling logic is written in javascript and it uses Node.js to connect to a discord server.</p>  <p> It listens for messages starting with <mark>.roll</mark>, parses the message for parameters, and outputs the roll along with formatting and the number of successes.</p>"}

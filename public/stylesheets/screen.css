@@ -9511,6 +9511,7 @@ header.banner #links {
   vertical-align: bottom;
 }
 header.banner #links a {
+  padding: 0 40px;
   color: #5bc0de;
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
