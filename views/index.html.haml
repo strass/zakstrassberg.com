@@ -32,7 +32,7 @@
           %span.sr-only.text-danger love
           building things!
         %p
-          
+
 
 
         -# %p.col-xs-12.col-md-8
@@ -89,10 +89,6 @@
               %i.fa.fa-linkedin.fa-4x{"aria-hidden" => "true", :title => "LinkedIn"}
               %span.sr-only LinkedIn
           %li.list-inline-item
-            %a{:href => "http://twitter.com/ZakStrassberg"}
-              %i.fa.fa-twitter.fa-4x{"aria-hidden" => "true", :title => "Twitter"}
-              %span.sr-only Twitter
-          %li.list-inline-item
             %a{:href => "mailto:zakstrassberg@gmail.com"}
               %i.fa.fa-envelope.fa-4x{"aria-hidden" => "true", :title => "Email"}
               %span.sr-only Email
@@ -107,7 +103,7 @@
 
       %dl.lead.row
         %dt.col-sm-2 Languages
-        %dd.col-sm-10 JavaScript (ES2016+), Ruby, Python, HTML5 & CSS3 (including HAML, Pug/Jade, Slim, & SASS)
+        %dd.col-sm-10 JavaScript (ES2016+), Ruby, Python, HTML5 &amp; CSS3 (including HAML, Pug/Jade, Slim, &amp; SASS)
 
         %dt.col-sm-2 Server
         %dd.col-sm-10 AWS, Heroku, private VPS (8+ years of web & game server administration)
@@ -116,10 +112,10 @@
         %dd.col-sm-10 SQL & MySQL, MongoDB, Postgres, Redis
 
         %dt.col-sm-2 Frameworks
-        %dd.col-sm-10 Angular, Vue, React, Rails, Flask, Bootstrap, Semantic UI, Materialize
+        %dd.col-sm-10 Angular, Vue, Rails, Flask, Bootstrap, Semantic UI, Materialize
 
         %dt.col-sm-2 Other tech
-        %dd.col-sm-10 Vim/Neovim, Linux (Debian), Photoshop, Amazon Alexa, LaTeX/XeTeX, git, Webpack, Electron
+        %dd.col-sm-10 Vim/Neovim, Linux (Debian), Photoshop &amp; Illustrator, Amazon Alexa, LaTeX/XeTeX, git, Webpack, Electron
 
         %dt.col-sm-2 Miscellaneous
         %dd.col-sm-10 SCRUM, TDD, StackOverflow
@@ -166,7 +162,7 @@
 
 
     = render :partial => 'project',
-      :locals => {:url => "http://github.com/zakstrassberg/dotfiles",
+      :locals => {:url => "https://github.com/zakstrassberg/dotfiles",
         :name => "Dotfiles",
         :img => "/images/dotfiles.png",
         :content => "<p> I maintain a github repository hosting my dotfiles. They are a work in progress  (and probably will be so in perpetuity). Send me a message on github  if you have any questions about my configs.</p>"}
@@ -183,38 +179,24 @@
 
     .clearfix.visible-xs-block.visible-sm-block
 
+    = render :partial => 'project',
+      :locals => {:url => "https://github.com/ZakStrassberg/tasks-rails",
+        :name => "Tasks",
+        :img => "/images/dotfiles.png",
+        :content => "<p>An in-progress Rails app that gamifies completion of tasks and goals, mostly an excuse to explore and practice some more advanced Rails features I want to gain experience with.</p>"}
+
+    .clearfix.visible-xs-block
+
   -###################
   -##### CONTACT #####
   -###################
   %article.col-xs-12#contact
     %h1.text-xs-center Contact
     %p Zak Strassberg
-    :javascript
-      //<![CDATA[
-      <!--
-      var x="function f(x,y){var i,o=\"\",l=x.length;for(i=0;i<l;i++){y%=127;o+=St" +
-      "ring.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f(\"\\035\\t\\023\\035t" +
-      "hmm$c.\\177!r|j~-g#\\177,018zz*`7v~rzjw\\014M\\037LH\\036QOAEO\\003T\\003MG" +
-      "QCq\\\\PPwC\\020U\\025\\n\\017\\024\\037\\002ysk807?<0bw3w!er<j/05!5?p<s ! " +
-      "80\\022I\\013^\\010HW\\\\\\001WW[W\\004CBY\\n\\035XI\\rX\\024\\020\\030\\01" +
-      "0:\\010U\\027):\\177qaqsuf)e%\\177xl|dc:#8zz>#d|3>4&)\\014}\\000\\026\\026\\"+
-      "025z{\\035\\032\\032wp\\032\\034\\037lm\\000\\003\\004ij\\007\\t\\tfg\\013\\"+
-      "017\\016c\\034\\010rrt\\031\\032u{y\\026\\027\\014\\004}\\177`\\r\\016\\035" +
-      "\\034\\024$\\014{g\\035lkl\\002\\003\\024Y\\031TST:;\\034\\020\\034Y\\022\\" +
-      "tA\\n\\036\\024\\025:_!L\\024\\021\\t\\020\\r]!\\\\\\\\]^!XY658UV8>=RS \\\"" +
-      "\\\"OHA#%(EF*.-BC\\026\\023\\022\\177x\\026\\025\\027tu\\030\\031\\034qr\\0" +
-      "33\\004\\003\\002oh\\005\\006\\007de\\016\\t\\014ab\\rrq\\036\\037pvv\\033\\"+
-      "024|y{\\020\\021z~`\\r\\016ege\\n\\013ojj\\007\\000lmo<=PST9:\\02345_X\\\\1" +
-      "23,-.\\035()FEH%&LMM\\\"\\\\233XY678UVyPQs= !NOt/(?)a,qka#!\\024\\005\\004\\"+
-      "037\\036G\\031\\003\\004\\014\\030\\016\\006\\rr\\r\\030WO\\010[\\025XEMM_I" +
-      "A\\006\\027\\026kj;k\\032l/o<\\010//#\\016<.82|+|028\\033+;3\\03701-\\006O\\"+
-      "005\\r\\r\\027\\0224UB\\005P[__RU\\010IAI_\\017^Q\\000QCJU@i)dj\\177,-,a2f7" +
-      "e6>2y9`|r.~c\\177w\\177w2e#s\\014}\\000\\177\\006\\030I\\013A\\tXJZV\\007V\\"+
-      "034I\\032U\\024[Y^LZTNZ\\037\\027\",123)"                                    ;
-      while(x=eval(x));
-      //-->
-      //]]>
-    %p 909 257 8727
+    %p
+      %a{:href => "mailto:zakstrassberg@gmail.com"}
+        zakstrassberg@gmail.com
+    %p (812) 925-5227
 
 
 
