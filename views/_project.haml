@@ -1,8 +1,10 @@
-%article.col-xs-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
-  %h3
+%article.col-xs-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.project
+  .card
+    .card-block
+      %h3.text-xs-center.card-title
+        %a{ :href => url }
+          = name
     %a{ :href => url }
-      = name
-  %a{ :href => url }
-    %img.img-fluid.center-block{ :src => img }
-  %section
-    = content
+      %img.img-fluid.center-block{ :src => img }
+    %section.card-block
+      = content

@@ -18,6 +18,11 @@
 #banner
   background: white
 
+#main, #skills, #banner
+  padding-top: 20px
+  h1
+    padding-bottom: 20px
+
 nav.row
   // display: flex
   // align-items: center
@@ -52,6 +57,7 @@ header.banner
     max-height: 100vh
 
 section#work
-  article
-    h3
-      padding-left: 24px
+  article.project
+    margin-bottom: 12px
+    .card
+      background: lighten($body-bg, 10%)

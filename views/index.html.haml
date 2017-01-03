@@ -8,14 +8,13 @@
   %nav.row.flex-items-xs-middle
     %h1.col-sm-5.col-xs-12#logo Zak Strassberg
     %ul.col-sm-7.col-xs-12#bar
+
       %li.col-xs-3.float-xs-right
-        %a.btn.btn-outline-primary{:href => "#skills"} Skills
+        %a.btn.btn-outline-primary{:href => "#contact"} Contact
       %li.col-xs-3.float-xs-right
         %a.btn.btn-outline-primary{:href => "#work"} Work
-      -# %li.col-xs-3
-      -#   %a.btn.btn-default{:href => "#about"} About
-      -# %li.col-xs-3
-      -#   %a.btn.btn-default{:href => "#contact"} Contact
+      %li.col-xs-3.float-xs-right
+        %a.btn.btn-outline-primary{:href => "#skills"} Skills
 
   -##################
   -##### BANNER #####
@@ -27,31 +26,35 @@
         %img.img-fluid{:src => "/images/zak.jpg"}
         %div.clear
       .col-md-8.pull-md-4
-        %h1.col-xs-12
+        %h2
           Hi! I'm Zak and I
           %i.fa.fa-heart.text-danger{ "aria-hidden" => "true"}
           %span.sr-only.text-danger love
           building things!
-        %p.col-xs-12.col-md-8
-          Born in the cold wilderness of Belfast, Maine and hardened in the artic
-          wasteland called Montreal, I have come to write responsive, accessible
-          websites!
-        %p.col-xs-12.col-md-8
-          Hire me if you want a hard-working, inquisitive mind in your organization.
-          My superpowers are logic, communication, and a relentlessly positive attitude.
+        %p
+          
 
-        %h2.col-xs-12 Front &amp;  backend developer, scientist, and enthusiast
-        %p.col-xs-12.col-md-8
-          My philosophy is
-        %h2.col-xs-12 Life science background, practically trained coder
-        %p.col-xs-12.col-md-8
-          I'm a scientist at heart and I have a penchant for biology. I recently decided
-          to branch out and explore some new career options. I attended
-          %a{:src => "http://codingdojo.com"}
-            Coding Dojo
-        %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
-        %h2.col-xs-12 Ask me about my work
-        %p.col-xs-12 maybe add a picture of myself here
+
+        -# %p.col-xs-12.col-md-8
+        -#   Born in the cold wilderness of Belfast, Maine and hardened in the artic
+        -#   wasteland called Montreal, I have come to write responsive, accessible
+        -#   websites!
+        -# %p.col-xs-12.col-md-8
+        -#   Hire me if you want a hard-working, inquisitive mind in your organization.
+        -#   My superpowers are logic, communication, and a relentlessly positive attitude.
+        -#
+        -# %h2.col-xs-12 Front &amp;  backend developer, scientist, and enthusiast
+        -# %p.col-xs-12.col-md-8
+        -#   My philosophy is
+        -# %h2.col-xs-12 Life science background, practically trained coder
+        -# %p.col-xs-12.col-md-8
+        -#   I'm a scientist at heart and I have a penchant for biology. I recently decided
+        -#   to branch out and explore some new career options. I attended
+        -#   %a{:src => "http://codingdojo.com"}
+        -#     Coding Dojo
+        -# %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
+        -# %h2.col-xs-12 Ask me about my work
+        -# %p.col-xs-12 maybe add a picture of myself here
 
         -#########################
         -##### TESTIMONIALS ######
@@ -120,7 +123,8 @@
 
         %dt.col-sm-2 Miscellaneous
         %dd.col-sm-10 SCRUM, TDD, StackOverflow
-
+      .col-xs-12.text-xs-center
+        %a.btn.btn-success.btn-lg{:href => "http://zakstrassberg.com/resume.pdf"} View my Resume
   -##########################
   -########## WORK ##########
   -##########################
