@@ -25,54 +25,25 @@
       .col-md-4.push-md-8.col-xs-12#portrait
         %img.img-fluid{:src => "/images/zak.jpg"}
         %div.clear
-      .col-md-8.pull-md-4
+      .col-md-8.pull-md-4#copy
         %h2
           Hi! I'm Zak and I
           %i.fa.fa-heart.text-danger{ "aria-hidden" => "true"}
           %span.sr-only.text-danger love
           building things!
+        %p I am a full stack engineer focusing on responsive and engaging webapps
+        %p You can usually find me in Mountain View, CA but I am interested in working remotely
+
+        %h4 Web done right
+        %p I have a diverse set of skills ranging from front-end dev, API design, and chat bots all the way to data analysis, devops, and Linux server administration
         %p
 
-
-
-        -# %p.col-xs-12.col-md-8
-        -#   Born in the cold wilderness of Belfast, Maine and hardened in the artic
-        -#   wasteland called Montreal, I have come to write responsive, accessible
-        -#   websites!
-        -# %p.col-xs-12.col-md-8
-        -#   Hire me if you want a hard-working, inquisitive mind in your organization.
-        -#   My superpowers are logic, communication, and a relentlessly positive attitude.
-        -#
-        -# %h2.col-xs-12 Front &amp;  backend developer, scientist, and enthusiast
-        -# %p.col-xs-12.col-md-8
-        -#   My philosophy is
-        -# %h2.col-xs-12 Life science background, practically trained coder
-        -# %p.col-xs-12.col-md-8
-        -#   I'm a scientist at heart and I have a penchant for biology. I recently decided
-        -#   to branch out and explore some new career options. I attended
-        -#   %a{:src => "http://codingdojo.com"}
-        -#     Coding Dojo
-        -# %p.col-xs-12 I care about efficient code, careful thought, and accessibility.
-        -# %h2.col-xs-12 Ask me about my work
-        -# %p.col-xs-12 maybe add a picture of myself here
-
-        -#########################
-        -##### TESTIMONIALS ######
-        -#########################
-        -# %section.col-xs-12#testimonials
-        -#   %ul.col-xs-12#testimonialSlider
-        -#     %li
-        -#       %blockquote
-        -#         %p " I still don't believe that Zak can stop smiling for any reason ever."
-        -#         %footer Danielle DeCarle, PhD Student of Ecology and Evolutionary Biology at the University of Toronto and the Royal Ontario Museum
-        -#     %li
-        -#       %blockquote
-        -#         %p
-        -#           Interpersonally, Zak has shown himself to be an individual who is inquisitive,
-        -#           hard­working, well­-motivated, and professionally mature. He sets and achieves
-        -#           high standards for himself and works well with others.
-        -#         %footer Dr. Stanley Rockson, Chief of Consultative Cardiology, Stanford University School of Medicine
-
+        %h4 Looking to help ship a product
+        %p
+          In the past I've only worked in academic environments and I want to
+          work on a product. My resume speaks for itself, you can view it
+          %a{:href=>"http://zakstrassberg.com/resume.pdf"}
+            here
         -########################
         -##### SOCIAL LINKS #####
         -########################
@@ -132,7 +103,7 @@
       :locals => {:url => "http://foodtrucks.zaks.pw",
         :name => "Dude Where's my Truck?",
         :img => "/images/dwmt.png",
-        :content => "<p>Dude Where's My Truck is a python webapp that dynamically filters and displays food trucks in San Francisco. It won the August Python hackathon at Coding Dojo!</p><p> It uses Google Maps API, Google Geometry API, Data.gov API, Twilio, FontAwesome, Moment.js, Bootstrap, and jQuery.</p><p> DWMT was a Group project (2 person) completed in four days, I was responsible for project management and front-end development.</p>"}
+        :content => "<p>Dude Where's My Truck is a python webapp that dynamically filters and displays food trucks in San Francisco.</p><p> It uses Google Maps API, Google Geometry API, Data.gov API, Twilio, FontAwesome, Moment.js, Bootstrap, and jQuery.</p><p> DWMT was a Group project (2 person) completed in four days. I was responsible for project management and front-end development. It won first place in the August Python hackathon at Coding Dojo!</p>"}
 
     .clearfix.visible-xs-block
 
@@ -140,7 +111,7 @@
       :locals => {:url => "http://tetromino.herokuapp.com/",
         :name => "Tetromino",
         :img => "/images/tetromino.png",
-        :content => "<p>Battle your friends in multiplayer, competitive Tetris! Written for MEAN stack project week, this was an individual project.</p><p>Tetromino is built on Node, Mongo, Express, Vue, Bootstrap, websockets/Socket.io, and Heroku.</p>"}
+        :content => "<p>Battle your friends in multiplayer, competitive Tetris! Written for MEAN stack project week, this was an individual project.</p><p>Tetromino is built on Node, Mongo, Express, Vue, Bootstrap, websockets/Socket.io, and Heroku.</p><p>Tetronimo was a hit and won first place in the September MEAN hackathon at Coding Dojo. People were still competing for the high score after weeks!</p>"}
 
 
     .clearfix.visible-xs-block.visible-sm-block
@@ -149,7 +120,7 @@
       :locals => {:url => "http://ninja-messages.herokuapp.com",
         :name => "Ninja Messages",
         :img => "/images/ninja-messages.png",
-        :content => "<p> Ninja Messages is a threaded messaging board created for Rails stack  project week. It features live-reloading posts and activity  notifications when users interact with the site.</p><p> This was an individual project completed in 5 days and won the October Rails hackathon.</p>"}
+        :content => "<p> Ninja Messages is a threaded messaging board created for Rails stack  project week. It features live-reloading posts and activity  notifications when users interact with the site using Vue.js and ActionCable (websockets).</p><p> This was an individual project completed in 5 days and won first place in the October Rails hackathon.</p>"}
 
     .clearfix.visible-xs-block
     = render :partial => 'project',
@@ -182,8 +153,8 @@
     = render :partial => 'project',
       :locals => {:url => "https://github.com/ZakStrassberg/tasks-rails",
         :name => "Tasks",
-        :img => "/images/dotfiles.png",
-        :content => "<p>An in-progress Rails app that gamifies completion of tasks and goals, mostly an excuse to explore and practice some more advanced Rails features I want to gain experience with.</p>"}
+        :img => "/images/tasks.png",
+        :content => "<p>An in-progress Rails app to keep me motivated. Complete tasks and goals in order to score points. Mostly an excuse to explore and practice some more advanced Rails features I want to gain experience with. I am working on an API and then making the app responsive.</p>"}
 
     .clearfix.visible-xs-block
 

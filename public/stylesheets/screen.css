@@ -9510,8 +9510,8 @@ header.banner {
   background-color: white;
   color: #55595c;
 }
-header.banner #testimonialSlider {
-  margin-top: 32px;
+header.banner #copy {
+  padding-top: 30px;
 }
 header.banner #links {
   padding: 20px 0;
@@ -9537,4 +9537,8 @@ section#work article.project {
 }
 section#work article.project .card {
   background: #3d5871;
+  max-width: 650px;
+}
+section#work article.project .card h3 {
+  margin-bottom: 0;
 }
